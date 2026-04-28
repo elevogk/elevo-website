@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background: radial-gradient(ellipse 120% 80% at 50% -10%, #0a0f2e 0%, #04060f 40%, #020308 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+}
+
+/* ─── Scrollbar hide (used by testimonial carousel on mobile) ─── */
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Reset #root so it never creates the bordered column ─── */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+  background: transparent;
+}
