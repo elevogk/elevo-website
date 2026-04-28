@@ -16,12 +16,14 @@ export function ShaderLines({ opacity = 0.15, className }: ShaderLinesProps) {
     let t = 0
 
     function resize() {
+      if (!canvas) return
       const parent = canvas.parentElement
       canvas.width  = parent ? parent.offsetWidth  : 800
       canvas.height = parent ? parent.offsetHeight : 400
     }
 
     function draw() {
+      if (!canvas) return
       const { width, height } = canvas
       ctx.clearRect(0, 0, width, height)
 

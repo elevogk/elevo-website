@@ -13,6 +13,7 @@ export function StarsCanvas() {
     let stars: Star[] = []
 
     function resize() {
+      if (!canvas) return
       W = canvas.width = window.innerWidth
       H = canvas.height = window.innerHeight
     }
