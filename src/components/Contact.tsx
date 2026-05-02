@@ -6,7 +6,7 @@ export function Contact() {
           Get In Touch
         </h2>
         <p className="text-gray-400 text-lg mb-12">
-          Have a question? Send us a message and we'll reply within 60 seconds.
+          Have a question? Send us a message and we reply within 60 seconds.
         </p>
         <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-2">
           <iframe
