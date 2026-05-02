@@ -11,7 +11,7 @@ import { HowItWorks }         from '@/components/HowItWorks'
 import { Metrics }            from '@/components/Metrics'
 import { Testimonials }       from '@/components/Testimonials'
 import { BookingCalendar }    from '@/components/ui/booking-calendar'
-import { Contact }
+import { Contact } from '@/components/Contact'
 import { CTA }                from '@/components/CTA'
 import { Footer }             from '@/components/Footer'
 
