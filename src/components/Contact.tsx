@@ -6,15 +6,15 @@ export function Contact() {
           Get In Touch
         </h2>
         <p className="text-gray-400 text-lg mb-12">
-          Have a question about our AI systems? Send us a message and we'll reply within 60 seconds.
+          Have a question? Send us a message and we'll reply within 60 seconds.
         </p>
-        <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-2">
+        <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-2">
           <iframe
             src="https://tally.so/embed/b5Nla2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
             height="300"
-            title="Get in Touch — Elevo GK"
+            title="Contact Elevo GK"
           />
         </div>
       </div>
