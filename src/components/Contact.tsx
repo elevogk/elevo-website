@@ -14,11 +14,7 @@ export function Contact() {
             loading="lazy"
             width="100%"
             height="300"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
             title="Get in Touch — Elevo GK"
-            style={{ background: 'transparent' }}
           />
         </div>
       </div>
