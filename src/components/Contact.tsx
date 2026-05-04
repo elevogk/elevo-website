@@ -27,16 +27,16 @@ export function Contact() {
         <div className="relative border border-white/10 bg-black/40 backdrop-blur-sm grid md:grid-cols-2 lg:grid-cols-3">
           
           {/* Corner plus signs */}
-          <span className="absolute -top-3 -left-3 text-[#C8F03C] text-2xl font-light">+</span>
-          <span className="absolute -top-3 -right-3 text-[#C8F03C] text-2xl font-light">+</span>
-          <span className="absolute -bottom-3 -left-3 text-[#C8F03C] text-2xl font-light">+</span>
-          <span className="absolute -bottom-3 -right-3 text-[#C8F03C] text-2xl font-light">+</span>
+          <span className="absolute -top-3 -left-3 text-white/60 text-2xl font-light">+</span>
+          <span className="absolute -top-3 -right-3 text-white/60 text-2xl font-light">+</span>
+          <span className="absolute -bottom-3 -left-3 text-white/60 text-2xl font-light">+</span>
+          <span className="absolute -bottom-3 -right-3 text-white/60 text-2xl font-light">+</span>
 
           {/* Left side */}
           <div className="flex flex-col justify-between lg:col-span-2 p-8 md:p-12">
             <div className="space-y-6">
               <div>
-                <p className="text-[#C8F03C] text-xs font-mono tracking-[4px] uppercase mb-4">Contact</p>
+                <p className="text-white/60 text-xs font-mono tracking-[4px] uppercase mb-4">Contact</p>
                 <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
                   Get In Touch
                 </h2>
@@ -47,8 +47,8 @@ export function Contact() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 <div className="flex items-center gap-4 p-4 border border-white/8 bg-white/3">
-                  <div className="p-3 bg-[#C8F03C]/10 border border-[#C8F03C]/20">
-                    <Mail className="h-5 w-5 text-[#C8F03C]" />
+                  <div className="p-3 bg-white/5 border border-white/10">
+                    <Mail className="h-5 w-5 text-white/60" />
                   </div>
                   <div>
                     <p className="text-white font-medium text-sm">Email</p>
@@ -57,8 +57,8 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 p-4 border border-white/8 bg-white/3">
-                  <div className="p-3 bg-[#C8F03C]/10 border border-[#C8F03C]/20">
-                    <MapPin className="h-5 w-5 text-[#C8F03C]" />
+                  <div className="p-3 bg-white/5 border border-white/10">
+                    <MapPin className="h-5 w-5 text-white/60" />
                   </div>
                   <div>
                     <p className="text-white font-medium text-sm">Location</p>
@@ -67,8 +67,8 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 p-4 border border-white/8 bg-white/3 md:col-span-2">
-                  <div className="p-3 bg-[#C8F03C]/10 border border-[#C8F03C]/20">
-                    <Phone className="h-5 w-5 text-[#C8F03C]" />
+                  <div className="p-3 bg-white/5 border border-white/10">
+                    <Phone className="h-5 w-5 text-white/60" />
                   </div>
                   <div>
                     <p className="text-white font-medium text-sm">Response Time</p>
@@ -83,8 +83,8 @@ export function Contact() {
           <div className="border-t md:border-t-0 md:border-l border-white/10 bg-white/3 p-8 flex flex-col justify-center">
             {status === 'sent' ? (
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 border border-[#C8F03C]/30 bg-[#C8F03C]/10 flex items-center justify-center mx-auto">
-                  <Send className="w-6 h-6 text-[#C8F03C]" />
+                <div className="w-16 h-16 border border-[#C8F03C]/30 bg-white/5 flex items-center justify-center mx-auto">
+                  <Send className="w-6 h-6 text-white/60" />
                 </div>
                 <p className="text-white font-semibold text-lg">Message Sent</p>
                 <p className="text-gray-400 text-sm">Check your inbox — you'll have a reply within 60 seconds.</p>
@@ -98,7 +98,7 @@ export function Contact() {
                     value={form.firstName}
                     onChange={e => setForm(f => ({ ...f, firstName: e.target.value }))}
                     placeholder="Michael"
-                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#C8F03C]/50 transition-colors"
+                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-white/30 transition-colors"
                   />
                 </div>
 
@@ -109,7 +109,7 @@ export function Contact() {
                     value={form.email}
                     onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                     placeholder="michael@company.com"
-                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#C8F03C]/50 transition-colors"
+                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-white/30 transition-colors"
                   />
                 </div>
 
@@ -120,14 +120,14 @@ export function Contact() {
                     onChange={e => setForm(f => ({ ...f, question: e.target.value }))}
                     placeholder="What is your AI receptionist and how much does it cost?"
                     rows={4}
-                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#C8F03C]/50 transition-colors resize-none"
+                    className="w-full bg-black/40 border border-white/10 text-white px-4 py-3 text-sm placeholder:text-gray-600 focus:outline-none focus:border-white/30 transition-colors resize-none"
                   />
                 </div>
 
                 <button
                   onClick={handleSubmit}
                   disabled={status === 'sending'}
-                  className="w-full bg-[#C8F03C] text-black font-bold py-3 text-sm tracking-widest uppercase hover:bg-[#d4f54a] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                  className="w-full bg-white text-black font-bold py-3 text-sm tracking-widest uppercase hover:bg-white/90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
                 >
                   {status === 'sending' ? (
                     'Sending...'
